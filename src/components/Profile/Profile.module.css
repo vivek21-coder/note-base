@@ -1,0 +1,44 @@
+.container {
+    margin-top: 5rem;
+    display: flex;
+    align-self: center;
+    min-width: 20rem;
+    justify-content: center;
+}
+
+.img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 100%;
+}
+
+.info_content {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    justify-content: center;
+    padding-left: 10%;
+}
+
+.name {
+    align-self: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.hr {
+    height: .5px;
+    background-color: #FFFFFF;
+}
+
+.email {
+    align-self: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: lighter;
+}

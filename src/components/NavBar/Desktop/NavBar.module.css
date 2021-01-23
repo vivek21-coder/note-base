@@ -1,0 +1,92 @@
+.Container {
+  position: fixed;
+  width: 100%;
+  height: 4.25rem;
+  background-color: #292929;
+  z-index: 100 !important;
+}
+
+.NavBar {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 4%;
+  padding-right: 8%;
+  z-index: 100;
+}
+
+.Header {
+  text-decoration: none;
+  color: #84DAFF;
+}
+
+.imgBrand{
+  height: 3rem;
+  padding-top: 1rem;
+  transition: 0.3s;
+}
+.imgBrand:hover{
+  filter: brightness(85%);
+}
+
+.MenuGroup {
+  padding-top: 0;
+  display: flex;
+  flex-direction: row;
+  width: 63%;
+  max-width: 25rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.MenuGroupLoggedOut{
+  padding-top: 0;
+  display: flex;
+  flex-direction: row;
+  width: 28%;
+  min-width: 18rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.MenuItem {
+  width: 5rem;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.6rem 0.2rem;
+  transition: all 0.5s;
+}
+
+.LoginBtn {
+  width: 3rem;
+  color: #A07A7A;
+  margin-left: 1rem;
+  border: 0.125rem solid #A07A7A;
+  padding: 0.3rem 1rem;
+  text-decoration: none;
+  border-radius: 0.3rem;
+  transition: all 0.3s;
+  text-align: center;
+}
+
+.LoginBtn:hover {
+  background-color: #5f3636;
+  color: #FFF;
+}
+
+.SignupBtn {
+  width: 3.7rem;
+  color: #FFF;
+  margin-left: 0.3rem;
+  border: 0.125rem solid #A07A7A;
+  background-color: #A07A7A;
+  padding: 0.3rem 1rem;
+  text-decoration: none;
+  border-radius: 0.3rem;
+  transition: all 0.3s;
+  text-align: center;
+}
+
+.SignupBtn:hover {
+  background-color: #5f3636;
+}

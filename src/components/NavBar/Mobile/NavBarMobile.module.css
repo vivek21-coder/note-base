@@ -1,0 +1,29 @@
+.Container {
+  position: fixed;
+  width: 100%;
+  height: 4.25rem;
+  background-color: #292929;
+  z-index: 102;
+}
+
+.NavBar {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 4%;
+  padding-right: 8%;
+}
+
+.Header {
+  text-decoration: none;
+  color: #84DAFF;
+}
+
+.imgBrand{
+  height: 3rem;
+  padding-top: 1rem;
+  transition: 0.3s;
+}
+.imgBrand:hover{
+  filter: brightness(85%);
+}

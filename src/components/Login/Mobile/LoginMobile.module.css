@@ -1,0 +1,26 @@
+.Container {
+  color: #fff;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.Heading {
+  font-size: 58px;
+  font-weight: 600;
+}
+
+.formContainer {
+  align-self: center;
+  margin-top: 3rem;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.line {
+  background-color: white;
+  height: 1px;
+  width: 95%;
+  align-self: center;
+  margin-top: 2rem;
+}

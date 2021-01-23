@@ -1,0 +1,50 @@
+.container {
+  width: 17rem;
+  margin-top: .8rem;
+  margin-bottom: .8rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.container:hover{
+  filter: brightness(80%);
+}
+.container:active{
+  filter: brightness(70%);
+}
+.selectedContainer{
+  filter: brightness(50%);
+}
+
+.headContainer {
+  height: 4.63rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px 5px 0 0;
+}
+.headingText{
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  width: 81%;
+  color: #fff;
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.content {
+
+  padding: .31rem .62rem .31rem .62rem;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  font-size: 12px;
+  font-family: Inter;
+
+  border-radius: 0 0 5px 5px;
+}

@@ -1,0 +1,25 @@
+.Container {
+  color: #fff;
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
+.Heading {
+  font-size: 58px;
+  font-weight: 600;
+}
+
+.formContainer {
+  margin-top: 2.5rem;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.line {
+  background-color: white;
+  height: 22.5rem;
+  width: 1px;
+  margin-left: 5%;
+  margin-right: 5%;
+}

@@ -1,0 +1,19 @@
+.Container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 120px;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+  align-self: center;
+}
+.Btn{
+  padding: 0;
+  cursor: pointer;
+  height: 50px;
+  transition: 0.3s;
+}
+
+.Btn:hover{
+  filter: brightness(120%);
+}

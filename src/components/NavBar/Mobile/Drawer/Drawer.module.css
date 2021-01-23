@@ -1,0 +1,79 @@
+.Drawer {
+  position: fixed;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  z-index: 101;
+  top: 0;
+  left: 0;
+  transition: 0.3s;
+}
+
+.NoDrawer {
+  position: fixed;
+  height: 100%;
+  z-index: 101;
+  top: 0;
+  left: -600px;
+  transition: 0.3s;
+}
+
+.MenuGroup {
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.MenuItem {
+  color: #BABDFF;
+  background-color: #292929;
+  width: inherit;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s;
+  padding: 0.9rem 0;
+}
+
+.MenuItem:hover {
+  color: #ffffff;
+  background-color: #1d1d1d;
+}
+
+.LoginBtn {
+  font-size: larger;
+  text-align: center;
+  width: inherit;
+  color: #A07A7A;
+  text-decoration: none;
+  transition: all 0.3s;
+  border: 0.2rem solid #A07A7A;
+  border-right-width: 0;
+  border-left-width: 0;
+  margin: 3rem 0 1rem;
+  padding: 1rem 0;
+}
+
+.LoginBtn:hover {
+  background-color: #5f3636;
+  color: #FFF;
+}
+
+.SignupBtn {
+  font-size: larger;
+  text-align: center;
+  width: inherit;
+  color: #FFF;
+  background-color: #A07A7A;
+  text-decoration: none;
+  transition: all 0.3s;
+  border: 0.2rem solid #A07A7A;
+  border-right-width: 0;
+  border-left-width: 0;
+  padding: 1rem 0;
+}
+
+.SignupBtn:hover {
+  background-color: #5f3636;
+}

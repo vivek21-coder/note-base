@@ -1,0 +1,64 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 22.5rem;
+  text-align: center;
+  align-content: center;
+  align-self: center;
+}
+.TextBoxContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 17.5rem;
+}
+.TextBox{
+  margin-top: 0.1rem;
+  height: 40px;
+  width: 248px;
+  border-radius: 8px;
+  border-width: 0;
+  background-color: rgba(255, 255, 255, 0.16);
+  padding-left: 8px;
+  padding-right: 8px;
+  color:#fff;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+.TextBox:focus{
+  outline: 0;
+  background-color: rgba(255, 255, 255, 0.18);
+}
+.Label{
+  color:#B7B7B7;
+  font-size: 12px;
+  text-align: left;
+}
+.LoginBtn{
+  outline: 0;
+  border: 0;
+  background-color: #674E4E;
+  height: 47px;
+  width: 264px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  text-decoration: none;
+  color:#fff;
+  border-radius: 5px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.LoginBtn:focus{
+  outline: 0;
+  filter: brightness(120%);
+}
+.LoginBtn:hover{
+  filter: brightness(120%);
+}
+.Error{
+  border: 3px solid #dc3545;
+  box-shadow: 0 0 10px #dc3545;
+}
