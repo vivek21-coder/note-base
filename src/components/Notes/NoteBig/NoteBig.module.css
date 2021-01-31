@@ -1,8 +1,9 @@
 .container {
-  width: 100%;
+  width: 65%;
   margin-top: .8rem;
   margin-bottom: .8rem;
-  margin-left: 5%;
+  margin-left: 25%;
+  position: fixed;
 }
 
 .headContainer {

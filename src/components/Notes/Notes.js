@@ -9,6 +9,7 @@ export default class Notes extends Component {
 
   state = {
     data: [],
+    searchText: '',
     curr: null,
   }
 
@@ -105,7 +106,7 @@ export default class Notes extends Component {
     const data = [...this.state.data];
     this.deleteNoteCloudHandler(data[i]._id);
     data.splice(i, 1);
-    this.setState({data: data});
+    this.setState({data: data, curr:null});
   }
 
   createNoteHandler = () => {
@@ -121,21 +122,47 @@ export default class Notes extends Component {
     });
   }
 
+  filterNotes = (notes, val) => {
+    val = val.toLowerCase();
+
+    const newNotes = [];
+    notes.forEach((note,i) => {
+      const {title, content} = note;
+      if (title.toLowerCase().includes(val) || content.toLowerCase().includes(val)) {
+        newNotes.push({...note, index:i});
+      }
+    });
+
+    return newNotes;
+  }
+
   render() {
     return (
       <div className={classes.container}>
-        <div>
+        <div className={classes.notesSmallContainer}>
 
-          <div className={classes.newNote} onClick={this.createNoteHandler}>
-            <img src={require('../../assets/images/newNote.svg')} alt="add New"/>
+          <div className={classes.search_box}>
+            <img className={classes.search_icon} src={require('../../assets/images/searchIcon.svg')} alt="search icon"/>
+            <input value={this.state.searchText} type="text"
+                   placeholder={'Search'}
+                   className={classes.searchText}
+                   onChange={(event) => {
+                     this.setState({searchText: event.currentTarget.value});
+                   }
+                   }
+            />
           </div>
 
-          {this.state.data.map((ele, i) => {
+          <div className={classes.newNote} onClick={this.createNoteHandler}>
+            <img className={classes.newNoteImage} src={require('../../assets/images/newNote.svg')} alt="add New"/>
+          </div>
+
+          {this.filterNotes(this.state.data, this.state.searchText).map((ele) => {
             return (
               <NoteSmall key={ele._id}
                          data={ele}
-                         isSelected={i === this.state.curr}
-                         onClick={() => this.changeSelected(i)}/>
+                         isSelected={ele.index === this.state.curr}
+                         onClick={() => this.changeSelected(ele.index)}/>
             )
           })}
         </div>
